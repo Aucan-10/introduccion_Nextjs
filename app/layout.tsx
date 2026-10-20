@@ -1,20 +1,24 @@
-// app/layout.tsx
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
+import './globals.css';
+import { RegistroServiceWorker } from './components/RegistroServiceWorker';
 
 export const metadata: Metadata = {
-  title: "Biblioteca Next.js",
-  description: "Frontend para la API de Biblioteca",
+  title: 'Biblioteca App',
+  description: 'Mi biblioteca personal',
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="es">
-      <body style={{ margin: 0, fontFamily: "system-ui, sans-serif" }}>
+      <body>
         {children}
+        {/* Aquí registramos el Service Worker */}
+        <RegistroServiceWorker />
       </body>
     </html>
   );
