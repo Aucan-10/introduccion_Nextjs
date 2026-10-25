@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.vercel.frontend_biblioteca_lyart.twa",
+      "sha256_cert_fingerprints": [
+        "54:65:B8:6F:A5:EB:D0:C8:BF:B1:62:17:55:FC:AB:E7:78:57:3F:4A:D9:28:67:90:13:18:F0:70:73:09:E6:DF"
+      ]
+    }
+  }
+]
